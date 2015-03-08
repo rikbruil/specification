@@ -13,7 +13,7 @@ $inCollection   = new InCollectionSpecification();
  
 // example of specification pattern logic chaining
 $sendToCollection = $overDue->andX($noticeSent)
-                            ->andX($inCollection->not());
+                            ->not($inCollection);
  
 foreach ($service->getInvoices() as $currentInvoice) {
     if (! $sendToCollection->isSatisfiedBy($currentInvoice)) {
