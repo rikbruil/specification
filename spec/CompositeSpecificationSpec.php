@@ -52,12 +52,10 @@ class CompositeSpecificationSpec extends ObjectBehavior
 class DummySpec extends CompositeSpecification
 {
     /**
-     * Returns a boolean indicating whether or not this specification can support the given class
-     * @param  string $className
-     * @return bool
+     * {@inheritDoc}
      */
-    public function isSatisfiedBy($className)
+    public function isSatisfiedBy($value)
     {
-        return $className === 'foo';
+        return $value === 'foo';
     }
 }

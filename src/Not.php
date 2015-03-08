@@ -23,8 +23,8 @@ class Not extends CompositeSpecification
     /**
      * {@inheritDoc}
      */
-    public function isSatisfiedBy($className)
+    public function isSatisfiedBy($value)
     {
-        return !$this->wrapped->isSatisfiedBy($className);
+        return !$this->wrapped->isSatisfiedBy($value);
     }
 }

@@ -30,8 +30,8 @@ class AndX extends CompositeSpecification
     /**
      * {@inheritDoc}
      */
-    public function isSatisfiedBy($className)
+    public function isSatisfiedBy($value)
     {
-        return $this->x->isSatisfiedBy($className) && $this->y->isSatisfiedBy($className);
+        return $this->x->isSatisfiedBy($value) && $this->y->isSatisfiedBy($value);
     }
 }
