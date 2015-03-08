@@ -26,9 +26,7 @@ foreach ($service->getInvoices() as $currentInvoice) {
 
 ## Requirements
 
-- PHP 5.5+
-
-However, I am planning to lower this to PHP 5.4+.
+- PHP 5.4+
 
 ## License
 

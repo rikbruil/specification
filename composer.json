@@ -17,7 +17,7 @@
     "psr-4": {"spec\\Rb\\Specification\\": "spec/"}
   },
   "require": {
-    "php": ">=5.5"
+    "php": ">=5.4"
   },
   "require-dev": {
     "phpspec/phpspec": "~2.1@dev",

@@ -13,12 +13,12 @@ class CompositeSpecificationSpec extends ObjectBehavior
 {
     public function let()
     {
-        $this->beAnInstanceOf(DummySpec::class);
+        $this->beAnInstanceOf('spec\Rb\Specification\DummySpec');
     }
 
     public function it_is_initializable()
     {
-        $this->shouldHaveType(CompositeSpecification::class);
+        $this->shouldHaveType('Rb\Specification\CompositeSpecification');
     }
 
     public function it_should_return_and_specification(SpecificationInterface $specification)
@@ -26,7 +26,7 @@ class CompositeSpecificationSpec extends ObjectBehavior
         $specification->isSatisfiedBy('foo')->willReturn(true);
 
         $and = $this->andX($specification);
-        $and->shouldHaveType(AndX::class);
+        $and->shouldHaveType('Rb\Specification\AndX');
         $and->isSatisfiedBy('foo')->shouldReturn(true);
     }
 
@@ -35,7 +35,7 @@ class CompositeSpecificationSpec extends ObjectBehavior
         $specification->isSatisfiedBy('foo')->willReturn(false);
 
         $or = $this->orX($specification);
-        $or->shouldHaveType(OrX::class);
+        $or->shouldHaveType('Rb\Specification\OrX');
         $or->isSatisfiedBy('foo')->shouldReturn(true);
     }
 
@@ -44,7 +44,7 @@ class CompositeSpecificationSpec extends ObjectBehavior
         $specification->isSatisfiedBy('foo')->willReturn(true);
 
         $not = $this->not($specification);
-        $not->shouldHaveType(Not::class);
+        $not->shouldHaveType('Rb\Specification\Not');
         $not->isSatisfiedBy('foo')->shouldReturn(false);
     }
 }
