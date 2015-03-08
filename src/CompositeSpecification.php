@@ -5,11 +5,10 @@ namespace Rb\Specification;
 /**
  * @package Rb\Specification
  */
-abstract class CompositeSpecification implements SpecificationInterface
+abstract class CompositeSpecification implements CompositeSpecificationInterface
 {
     /**
-     * @param  SpecificationInterface $specification
-     * @return AndX
+     * {@inheritDoc}
      */
     public function andX(SpecificationInterface $specification)
     {
@@ -17,8 +16,7 @@ abstract class CompositeSpecification implements SpecificationInterface
     }
 
     /**
-     * @param  SpecificationInterface $specification
-     * @return OrX
+     * {@inheritDoc}
      */
     public function orX(SpecificationInterface $specification)
     {
@@ -26,8 +24,7 @@ abstract class CompositeSpecification implements SpecificationInterface
     }
 
     /**
-     * @param  SpecificationInterface $specification
-     * @return Not
+     * {@inheritDoc}
      */
     public function not(SpecificationInterface $specification)
     {
