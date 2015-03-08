@@ -10,7 +10,7 @@ class Not extends CompositeSpecification
     /**
      * @var SpecificationInterface
      */
-    private $wrapped;
+    protected $wrapped;
 
     /**
      * @param SpecificationInterface $x

@@ -10,12 +10,12 @@ class OrX extends CompositeSpecification
     /**
      * @var SpecificationInterface
      */
-    private $x;
+    protected $x;
 
     /**
      * @var SpecificationInterface
      */
-    private $y;
+    protected $y;
 
     /**
      * @param SpecificationInterface $x
