@@ -1,6 +1,8 @@
 # Specification 
 [![Build Status](https://travis-ci.org/rikbruil/specification.svg)](https://travis-ci.org/rikbruil/specification)
 [![Coverage Status](https://coveralls.io/repos/rikbruil/specification/badge.svg?branch=master)](https://coveralls.io/r/rikbruil/specification?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/rikbruil/specification/v/stable.svg)](https://packagist.org/packages/rikbruil/specification)
+[![License](https://poser.pugx.org/rikbruil/specification/license.svg)](https://packagist.org/packages/rikbruil/specification)
 
 PHP implementation of the [Specification pattern][specification_pattern]
 
