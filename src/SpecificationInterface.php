@@ -27,7 +27,7 @@ interface SpecificationInterface
 
     /**
      * Returns a boolean indicating whether or not this specification can support the given class
-     * @param mixed $value
+     * @param  mixed $value
      * @return bool
      */
     public function isSatisfiedBy($value);
