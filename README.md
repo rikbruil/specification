@@ -16,7 +16,7 @@ $sendToCollection = $overDue->andX($noticeSent)
                             ->andX($inCollection->not());
  
 foreach ($service->getInvoices() as $currentInvoice) {
-    if (! $sendToCollection->IsSatisfiedBy($currentInvoice)) {
+    if (! $sendToCollection->isSatisfiedBy($currentInvoice)) {
         continue;
     }
     
