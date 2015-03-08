@@ -1,0 +1,30 @@
+<?php
+
+namespace Rb\Specification;
+
+/**
+ * @package Rb\Specification
+ */
+class Not extends CompositeSpecification
+{
+    /**
+     * @var SpecificationInterface
+     */
+    private $wrapped;
+
+    /**
+     * @param SpecificationInterface $x
+     */
+    public function __construct(SpecificationInterface $x)
+    {
+        $this->wrapped = $x;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function isSatisfiedBy($className)
+    {
+        return !$this->wrapped->isSatisfiedBy($className);
+    }
+}
