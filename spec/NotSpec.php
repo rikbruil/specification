@@ -18,7 +18,7 @@ class NotSpec extends ObjectBehavior
         $this->shouldHaveType(CompositeSpecification::class);
     }
 
-    public function it_should_satisfy_if_child_does_not_satisfy(SpecificationInterface $specification)
+    public function it_should_pass_if_child_fails(SpecificationInterface $specification)
     {
         $className = 'foo';
         $this->beConstructedWith($specification);
