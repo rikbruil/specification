@@ -3,7 +3,6 @@
 namespace Rb\Specification;
 
 /**
- * @package Rb\Specification
  */
 abstract class CompositeSpecification implements CompositeSpecificationInterface
 {

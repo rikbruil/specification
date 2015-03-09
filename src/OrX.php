@@ -3,7 +3,6 @@
 namespace Rb\Specification;
 
 /**
- * @package Rb\Specification
  */
 class OrX extends CompositeSpecification
 {
