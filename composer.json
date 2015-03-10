@@ -1,5 +1,6 @@
 {
   "name": "rikbruil/specification",
+  "description": "A PHP implementation of the Specification-pattern",
   "type": "library",
   "keywords": ["specification", "pattern"],
   "license": "MIT",
