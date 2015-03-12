@@ -4,28 +4,8 @@ namespace Rb\Specification;
 
 /**
  */
-class OrX extends CompositeSpecification
+class OrX extends AndX
 {
-    /**
-     * @var SpecificationInterface
-     */
-    protected $x;
-
-    /**
-     * @var SpecificationInterface
-     */
-    protected $y;
-
-    /**
-     * @param SpecificationInterface $x
-     * @param SpecificationInterface $y
-     */
-    public function __construct(SpecificationInterface $x, SpecificationInterface $y)
-    {
-        $this->x = $x;
-        $this->y = $y;
-    }
-
     /**
      * {@inheritDoc}
      */
